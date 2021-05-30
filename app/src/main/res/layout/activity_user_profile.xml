@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfileActivity"
+    android:background="@drawable/customermenupage">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_UserProfile_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/topnav"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_Menu_Heading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/heading_Profile"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/Page_Top_heading_TextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo_UserProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_UserProfile_activity"
+        app:layout_constraintEnd_toStartOf="@+id/tv_Menu_Heading3"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/mycheflogo" />
+
+    <EditText
+        android:id="@+id/et_first_name_userprofile"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/Input_text_Background_colour"
+        android:hint="@string/Register_hint_first_name"
+        android:inputType="text"
+        android:padding="@dimen/Register_InputText_padding"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/Input_text_hint_colour"
+        android:textSize="@dimen/Register_Input_TextSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/et_Last_name_userprofile"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/Input_text_Background_colour"
+        android:hint="@string/Register_hint_last_name"
+        android:inputType="text"
+        android:padding="@dimen/Register_InputText_padding"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/Input_text_hint_colour"
+        android:textSize="@dimen/Register_Input_TextSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/et_first_name_userprofile"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_first_name_userprofile"
+        app:layout_constraintTop_toBottomOf="@+id/et_first_name_userprofile"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <EditText
+        android:id="@+id/et_Address_userprofile"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/Input_text_Background_colour"
+        android:hint="@string/Register_hint_Address"
+        android:inputType="text"
+        android:padding="@dimen/Register_InputText_padding"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/Input_text_hint_colour"
+        android:textSize="@dimen/Register_Input_TextSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/et_Last_name_userprofile"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_Last_name_userprofile"
+        app:layout_constraintTop_toBottomOf="@+id/et_Last_name_userprofile"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/et_EmailID_userprofile"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/Input_text_Background_colour"
+        android:hint="@string/Register_hint_EmailID"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/Register_InputText_padding"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/Input_text_hint_colour"
+        android:textSize="@dimen/Register_Input_TextSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/et_Address_userprofile"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_Address_userprofile"
+        app:layout_constraintTop_toBottomOf="@+id/et_Address_userprofile"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/scrollbarbackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Menu_Heading2" />
+
+
+
+    <TextView
+        android:id="@+id/tv_MenuDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_weight="1"
+        android:text="@string/Edit_User_Profile"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/Menu_Filter_TextSize"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.588" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="152dp"
+        android:paddingLeft="60dp"
+        android:paddingTop="4dp"
+        android:paddingRight="60dp"
+        android:paddingBottom="4dp"
+        android:text="@string/btn_Save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/Button_textsize"
+        app:layout_constraintBottom_toTopOf="@+id/iv_bottomNav"
+        app:layout_constraintEnd_toEndOf="@+id/et_EmailID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_EmailID_userprofile"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/iv_bottomNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bottomnavbackground" />
+
+    <ImageView
+        android:id="@+id/iv_Home_editprofile"
+        android:layout_width="40dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_menu_editprofile"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_bottomNav"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/homeicon" />
+
+    <ImageView
+        android:id="@+id/iv_menu_editprofile"
+        android:layout_width="42dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_bottomNav"
+        app:layout_constraintEnd_toStartOf="@+id/iv_order_editprofile"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_bottomNav"
+        app:layout_constraintVertical_bias="0.857"
+        app:srcCompat="@drawable/menuicon" />
+
+    <ImageView
+        android:id="@+id/iv_order_editprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="51dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_bottomNav"
+        app:layout_constraintEnd_toStartOf="@+id/iv_UserProfile_editprofile"
+        app:layout_constraintTop_toTopOf="@+id/iv_bottomNav"
+        app:srcCompat="@drawable/ordericon" />
+
+    <ImageView
+        android:id="@+id/iv_UserProfile_editprofile"
+        android:layout_width="44dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_bottomNav"
+        app:layout_constraintEnd_toEndOf="@+id/iv_bottomNav"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_bottomNav"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/profileicon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

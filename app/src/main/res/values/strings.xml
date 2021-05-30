@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">MyChef</string>
+
+
+    <string name="btn_Login">Login</string>
+    <string name="DoNotHaveanAccount">Do not have an account?</string>
+    <string name="Register"><u>Register</u></string>
+    <string name="btn_Register">Register</string>
+
+    <string name="RegisterPage">Register</string>
+    <string name="Register_hint_first_name">First Name</string>
+    <string name="Register_hint_last_name">Last Name</string>
+    <string name="Register_hint_EmailID">Email ID</string>
+    <string name="Register_hint_Address">Address</string>
+    <string name="Register_hint_Password">Password</string>
+    <string name="Register_hint_Confirm_Password">Confirm Password</string>
+    <string name="Agree_to_the_terms_and_condition">I Agree To The <u> Terms &amp; Condition </u> </string>
+
+    <string name="ForgotPassword"><u>Forgot Password</u></string>
+    <string name="LoginAsAdmin">Login As Admin</string>
+
+    <string name="heading_Home">Home</string>
+    <string name="Heading_Menu">Menu</string>
+    <string name="heading_Profile">Profile</string>
+    <string name="heading_Order">Order</string>
+
+    <string name="Menu_Details">Menu Details</string>
+    <string name="Order">Order</string>
+    <string name="UpcomingOrder">Upcoming Orders</string>
+
+    <string name="Edit_User_Profile">Edit Profile</string>
+    <string name="btn_Save">Save</string>
+
+
+    <string name="btn_Menu">Menu</string>
+    <string name="btn_Order">Order</string>
+    <string name="Platinum">Platinum</string>
+    <string name="Gold">Gold</string>
+    <string name="Silver">Silver</string>
+    <string name="No_item_in_menu">No Items in Mneu!</string>
+
+
+    <string name="MyOrders"><u>My Order</u></string>
+
+    <string name="er_msg_enter_first_name">Please enter first name.</string>
+    <string name="er_msg_enter_last_name">Please enter last name.</string>
+    <string name="er_msg_enter_email">Please enter email.</string>
+    <string name="er_msg_Address">Please enter Address.</string>
+    <string name="er_msg_enter_password">Please enter password.</string>
+    <string name="er_msg_enter_confirm_password">Please enter confirm password.</string>
+    <string name="er_msg_password_and_confirm_password_mismatch">Password and confirm password does not match.</string>
+    <string name="er_msg_agree_terms_and_condition">Please agree to terms and condition.</string>
+
+    <string name="Successful_msg_ResetEmailSent">Email Sent Successfully!</string>
+    <string name="Successful_msg_Updated">Details updated Successfully!</string>
+    <string name="Successful_msg_Registered">Registration Successful!</string>
+    <string name="Chefs_Not_ready">Chefs not ready!</string>
+    <string name="ClickAgainToExit">Click Again to Exit!</string>
+
+
+    <string name="please_wait">Please Wait&#8230;</string>
+    <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+
+
+    <string name="ResetPassword">Reset Password</string>
+    <string name="btn_Send_Reset_Password_Email">Send</string>
+    <string name="title_activity_cus__menu__list">Cus_Menu_ListActivity</string>
+    <string name="title_activity_customer_menu_list">CustomerMenuListActivity</string>
+    <string name="title_activity_my_order">MyOrder</string>
+
+    <string name="er_msg_Already_in_Selected_Page">Already in Selected Page</string>
+
+
+</resources>

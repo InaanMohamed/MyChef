@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerMenuListActivity"
+    android:background="@drawable/homepagefinihseddesign">
+
+
+    <TextView
+        android:id="@+id/tv_Menu_Heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/heading_Home"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/Page_Top_heading_TextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btn_Menu_HomePage"
+        android:layout_width="105dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="148dp"
+        android:alpha="0.00"
+        app:layout_constraintBottom_toTopOf="@+id/iv_bottomNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_Chef_HomePage"
+        android:layout_width="128dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="164dp"
+        android:alpha="0.00"
+        app:layout_constraintBottom_toTopOf="@+id/iv_bottomNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_bottomNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bottomnavbackground" />
+
+    <ImageView
+        android:id="@+id/iv_Home_HomePage"
+        android:layout_width="40dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_menu_HomePage"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_bottomNav"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/homeicon" />
+
+    <ImageView
+        android:id="@+id/iv_menu_HomePage"
+        android:layout_width="42dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_bottomNav"
+        app:layout_constraintEnd_toStartOf="@+id/iv_order_HomePage"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_bottomNav"
+        app:layout_constraintVertical_bias="0.857"
+        app:srcCompat="@drawable/menuicon" />
+
+    <ImageView
+        android:id="@+id/iv_order_HomePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="51dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_bottomNav"
+        app:layout_constraintEnd_toStartOf="@+id/iv_UserProfile_HomePage"
+        app:layout_constraintTop_toTopOf="@+id/iv_bottomNav"
+        app:srcCompat="@drawable/ordericon" />
+
+    <ImageView
+        android:id="@+id/iv_UserProfile_HomePage"
+        android:layout_width="44dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_bottomNav"
+        app:layout_constraintEnd_toEndOf="@+id/iv_bottomNav"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_bottomNav"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/profileicon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

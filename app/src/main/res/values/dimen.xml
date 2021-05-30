@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //Home Page
+    <dimen name="home_page_login_textsize">25sp</dimen>
+    <dimen name="home_page_Register_textsize">16sp</dimen>
+
+    <dimen name="Button_textsize">20sp</dimen>
+
+    <dimen name="Register_InputText_padding">16dp</dimen>
+    <dimen name="Register_Input_TextSize">16sp</dimen>
+
+    <dimen name="Menu_Filter_TextSize">18sp</dimen>
+    <dimen name="Button_MenuOrder_TextSize">18sp</dimen>
+
+    <dimen name="Page_Top_heading_TextSize">18sp</dimen>
+
+    <dimen name="Menu_heading_TextSize">20sp</dimen>
+    <dimen name="Menu_price_TextSize">15sp</dimen>
+    <dimen name="Menu_description_TextSize">12sp</dimen>
+
+    <dimen name="Heading_TextSize">20sp</dimen>
+
+    <dimen name="progress_dialog_content_padding">10dp</dimen>
+    <dimen name="progress_bar_size">50dp</dimen>
+    <dimen name="progress_text_marginStart">16dp</dimen>
+    <dimen name="progress_text_size">16sp</dimen>
+
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/customermenupage"
+    tools:context=".MyOrder">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_MyOrder_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/topnav"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_menu_list_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_bottomNav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_TopBar"
+        />
+
+    <ImageView
+        android:id="@+id/iv_TopBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Menu_Heading3"
+        app:srcCompat="@drawable/scrollbarbackground" />
+
+    <TextView
+        android:id="@+id/tv_Menu_Heading3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/heading_Order"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/Page_Top_heading_TextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="@string/MyOrders"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/Menu_Filter_TextSize"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_TopBar"
+        app:layout_constraintEnd_toEndOf="@+id/iv_TopBar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iv_TopBar"
+        app:layout_constraintTop_toTopOf="@+id/iv_TopBar"
+        app:layout_constraintVertical_bias="0.47" />
+
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/iv_bottomNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bottomnavbackground" />
+
+    <ImageView
+        android:id="@+id/iv_Home_OrderList"
+        android:layout_width="40dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_menu_OrderList"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_bottomNav"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/homeicon" />
+
+    <ImageView
+        android:id="@+id/iv_menu_OrderList"
+        android:layout_width="42dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_bottomNav"
+        app:layout_constraintEnd_toStartOf="@+id/iv_order_OrderList"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_bottomNav"
+        app:layout_constraintVertical_bias="0.857"
+        app:srcCompat="@drawable/menuicon" />
+
+    <ImageView
+        android:id="@+id/iv_order_OrderList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="51dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_bottomNav"
+        app:layout_constraintEnd_toStartOf="@+id/iv_UserProfile_OrderList"
+        app:layout_constraintTop_toTopOf="@+id/iv_bottomNav"
+        app:srcCompat="@drawable/ordericon" />
+
+    <ImageView
+        android:id="@+id/iv_UserProfile_OrderList"
+        android:layout_width="44dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_bottomNav"
+        app:layout_constraintEnd_toEndOf="@+id/iv_bottomNav"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_bottomNav"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/profileicon" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_TopBar"
+        app:layout_constraintEnd_toStartOf="@+id/tv_Menu_Heading3"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/mycheflogo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
